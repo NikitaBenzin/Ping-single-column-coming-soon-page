@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$blue-100: hsl(223, 100%, 88%);
+$blue-200: hsl(223, 87%, 63%);
+$blue-300: hsl(209, 33%, 12%);
+$red-100: hsl(354, 100%, 66%);
+$gray-100: hsl(0, 0%, 59%);
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    .main-section{
+        display: grid;
+        place-items: center;
+        width: 90%;
+        height: 90%;
+        header{
+            text-align: center;
+            padding-bottom: 3rem;
+        }
+        main{
+            display: grid;
+            place-items: center;
+            .main-heder{
+                text-align: center;
+                width: 90%;
+                h1{
+                    color: $gray-100;
+                    font-weight: 300;
+                    font-size: 26px;
+                    padding-bottom: 1rem;
+                    section{
+                        color: $blue-300;
+                        font-weight: 700;
+                        display: contents;
+                    }
+    
+    
+                }
+                >p{
+                    color: $blue-300;
+                    font-size: 18px;
+                    padding-bottom: 2rem;
+                }
+                >section{
+                    
+                    ::placeholder { 
+                        color: $blue-100;
+                        opacity: 1;
+                    }
+                    form{
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        >section{
+                            input{
+                                border: 2px solid $blue-100;
+                                border-radius: 1.8rem;
+                                background:none;
+                                outline:none;
+                                padding: 1rem 0 1rem 2rem;
+                                width: 100%;
+                            }
+                            .error{
+                                font-size: 16px;
+                                color: $red-100;
+                                font-style: italic;
+                                padding: 0.5rem 0 1.5rem 0;
+                                display: block;
+                            }
+                        }
+                        button{
+                            padding: 1rem 0 1rem 0;
+                            border: none;
+                            border-radius: 1.8rem;
+                            font: inherit;
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: white;
+                            background-color: $blue-200;
+                            cursor: pointer;
+                            margin-bottom: 2rem;
+                            width: 100%;
+                        }
+                        button:hover{
+                            background-color: #6c91ef;
+                        }
+                    }
+                }
+            }
+
+            >img{
+                width: 100%;
+            }
+            
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 50%;
+            padding-bottom: 2rem;
+            ul{
+                display: flex;
+                list-style: none;
+                gap: 2rem;
+                padding-bottom: 2rem;
+                li{
+                    
+                    a{
+                        border: 1px solid rgba(0, 0, 0, 0);
+                        border-radius: 50%;
+                        padding: 0.3rem 0.5rem;
+                        svg path{
+                            fill: #4f7df3;
+                        }
+                    }
+                    a:hover{
+                        border: 1px solid $blue-200;
+                        background-color: $blue-200;
+                    }
+                    
+                    a:hover path {
+                        fill: #ffffff;
+                    }
+                }
+            }
+            >p{
+                color: $gray-100;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px){
+    .container {
+        .main-section{
+            main {
+                > img {
+                    width: 50%;
+            
+                }
+                .main-heder {
+                    width: 50%;
+                    
+                    >section{
+                        
+                        form{
+                            grid-template-columns: 65% 32%;
+                            gap: 1rem;
+                            align-items: start;
+                        }
+                    }
+                    
+                    >p{
+                        font-size: 20px;
+                    }
+                    h1{
+                        font-size: 48px;
+                    }
+                }
+            }
+            footer{
+                >p{
+                    font-size: 20px;
+                }
+            }
+        }    
+    }
+}

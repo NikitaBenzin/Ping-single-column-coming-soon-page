@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.container .main-section {
+  display: grid;
+  place-items: center;
+  width: 90%;
+  height: 90%;
+}
+.container .main-section header {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.container .main-section main {
+  display: grid;
+  place-items: center;
+}
+.container .main-section main .main-heder {
+  text-align: center;
+  width: 90%;
+}
+.container .main-section main .main-heder h1 {
+  color: hsl(0deg, 0%, 59%);
+  font-weight: 300;
+  font-size: 26px;
+  padding-bottom: 1rem;
+}
+.container .main-section main .main-heder h1 section {
+  color: hsl(209deg, 33%, 12%);
+  font-weight: 700;
+  display: contents;
+}
+.container .main-section main .main-heder > p {
+  color: hsl(209deg, 33%, 12%);
+  font-size: 18px;
+  padding-bottom: 2rem;
+}
+.container .main-section main .main-heder > section ::-moz-placeholder {
+  color: hsl(223deg, 100%, 88%);
+  opacity: 1;
+}
+.container .main-section main .main-heder > section :-ms-input-placeholder {
+  color: hsl(223deg, 100%, 88%);
+  opacity: 1;
+}
+.container .main-section main .main-heder > section ::placeholder {
+  color: hsl(223deg, 100%, 88%);
+  opacity: 1;
+}
+.container .main-section main .main-heder > section form {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.container .main-section main .main-heder > section form > section input {
+  border: 2px solid hsl(223deg, 100%, 88%);
+  border-radius: 1.8rem;
+  background: none;
+  outline: none;
+  padding: 1rem 0 1rem 2rem;
+  width: 100%;
+}
+.container .main-section main .main-heder > section form > section .error {
+  font-size: 16px;
+  color: hsl(354deg, 100%, 66%);
+  font-style: italic;
+  padding: 0.5rem 0 1.5rem 0;
+  display: block;
+}
+.container .main-section main .main-heder > section form button {
+  padding: 1rem 0 1rem 0;
+  border: none;
+  border-radius: 1.8rem;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: hsl(223deg, 87%, 63%);
+  cursor: pointer;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.container .main-section main .main-heder > section form button:hover {
+  background-color: #6c91ef;
+}
+.container .main-section main > img {
+  width: 100%;
+}
+.container .main-section footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 50%;
+  padding-bottom: 2rem;
+}
+.container .main-section footer ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+.container .main-section footer ul li a {
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  padding: 0.3rem 0.5rem;
+}
+.container .main-section footer ul li a svg path {
+  fill: #4f7df3;
+}
+.container .main-section footer ul li a:hover {
+  border: 1px solid hsl(223deg, 87%, 63%);
+  background-color: hsl(223deg, 87%, 63%);
+}
+.container .main-section footer ul li a:hover path {
+  fill: #ffffff;
+}
+.container .main-section footer > p {
+  color: hsl(0deg, 0%, 59%);
+  font-size: 14px;
+}
+
+@media (min-width: 992px) {
+  .container .main-section main > img {
+    width: 50%;
+  }
+  .container .main-section main .main-heder {
+    width: 50%;
+  }
+  .container .main-section main .main-heder > section form {
+    grid-template-columns: 65% 32%;
+    gap: 1rem;
+    align-items: start;
+  }
+  .container .main-section main .main-heder > p {
+    font-size: 20px;
+  }
+  .container .main-section main .main-heder h1 {
+    font-size: 48px;
+  }
+  .container .main-section footer > p {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
