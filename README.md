@@ -1,0 +1,2 @@
+- Mobile / Desktop
+- preview: https://nikitabenzin.github.io/Ping-single-column-coming-soon-page/
